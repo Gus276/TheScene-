@@ -1,0 +1,51 @@
+/* Global styles for App */
+.App {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
+    grid-template-columns: 1fr !important;
+  }
+
+  .chatrooms-container,
+  .messages-container,
+  .playlists-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .rooms-list,
+  .conversations-list,
+  .playlists-list {
+    display: none;
+  }
+
+  .nav-menu {
+    gap: 10px !important;
+  }
+}
